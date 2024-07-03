@@ -1,0 +1,198 @@
+/* new.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 70vh;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.card-bg {
+    position: relative;
+    width: 50%;
+    overflow: hidden;
+}
+
+.card-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-content {
+    position: relative;
+    width: 50%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.movie-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.movie-img {
+    width: 120px;
+    height: 180px;
+    margin-right: 20px;
+    overflow: hidden;
+    border-radius: 8px;
+    border: 3px solid #fff;
+}
+
+.movie-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.movie-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.movie-name {
+    font-size: 2em;
+    margin: 0 0 10px 0;
+    color: #007acc;
+}
+
+.movie-actor {
+    margin: 5px 0;
+}
+
+.movie-meta {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.movie-duration,
+.movie-type {
+    background-color: #007acc;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.movie-about {
+    margin-top: 20px;
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.icons {
+    display: flex;
+    margin-top: 20px;
+}
+
+.icons i {
+    font-size: 1.5em;
+    margin-right: 15px;
+    color: #007acc;
+    cursor: pointer;
+}
+
+.icons i:hover {
+    color: #005f99;
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column;
+        height: auto;
+        width: 90%;
+        padding: 30px;
+    }
+
+    .card-bg {
+        width: 100%;
+        height: 200px;
+    }
+
+    .card-bg img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .card-content {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .movie-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .movie-img {
+        width: 120px;
+        height: 180px;
+        margin-bottom: 10px;
+    }
+
+    .movie-name {
+        font-size: 1.5em;
+    }
+
+    .movie-about {
+        font-size: 0.9em;
+    }
+
+    .icons i {
+        font-size: 1.2em;
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 95%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .movie-name {
+        font-size: 1.2em;
+    }
+
+    .movie-about {
+        font-size: 0.8em;
+    }
+
+    .icons i {
+        font-size: 1em;
+        margin-right: 8px;
+    }
+}
