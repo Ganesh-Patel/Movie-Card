@@ -36,3 +36,4 @@ const MovieCard = ({ bgImg, movieImg, name, year, actor, duration, type, about }
 };
 
 export default MovieCard;
+
